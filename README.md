@@ -4,19 +4,22 @@ A small Morse-code experiment that listens to taps on a laptop body. One tap
 becomes a dot and a quick double tap becomes a dash. After a short pause, the
 app resolves the current Morse sequence and writes the letter on screen.
 
+Demo: [https://youtube.com/shorts/qS_Tctu9oSw](https://youtube.com/shorts/qS_Tctu9oSw)
+
 ## Setup
 
 You will need Python 3 and a laptop microphone.
 
 ```sh
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Start the app from the repository root:
 
 ```sh
-.venv/bin/python morse_app.py
+python morse_app.py
 ```
 
 macOS may ask for microphone access for the terminal application. Allow it in
@@ -24,8 +27,6 @@ macOS may ask for microphone access for the terminal application. Allow it in
 
 ## Controls
 
-| Input | Result |
-| ----- | ------ |
 | Single tap | Dot (`.`) |
 | Quick double tap | Dash (`-`) |
 | Brief pause | Resolve the current letter |
@@ -53,5 +54,5 @@ to make double taps easier to recognize.
 
 ## AI Usage
 
-I used an AI coding assistant to help debug the tap timing and clean up this
+I used an AI coding assistant to help debug the tap timing (which took a frustratingly long amount of time) and clean up this
 README.
